@@ -1,16 +1,17 @@
 # FedCross
 Federated Cross Learning for Medical Image Segmentation
 
-This is a python (PyTorch) implementation of **Federated Cross Learning (FedCross)** method proposed in our preprint paper [**"Federated Cross Learning for Medical Image Segmentation"**](https://arxiv.org/abs/2204.02450).
+This is a python (PyTorch) implementation of **Federated Cross Learning (FedCross)** method proposed in our paper [**"Federated Cross Learning for Medical Image Segmentation"**](https://openreview.net/forum?id=DrZbwobH_zo) published in *Medical Imaging with Deep Learning 2023* conference (Nashville, Tennessee, United States, Jul. 10-12, 2023). A preprint version of this paper is also available on [arXiv](https://arxiv.org/abs/2204.02450)
 
 ## Citation
-  *X. Xu, T. Chen, H. H. Deng, T. Kuang, J. C. Barber, D. Kim, J. Gateno, P. Yan, and J. J. Xia, "Federated Cross Learning for Medical Image Segmentation," 2022, arXiv:2204.02450.*
+  *X. Xu, H. H. Deng, T. Chen, T. Kuang, J. C. Barber, D. Kim, J. Gateno, J. J. Xia, and P. Yan, "Federated Cross Learning for Medical Image Segmentation," in Medical Imaging with Deep Learning 2023. Nashville, Tennessee, United States, Jul. 10-12, 2023.*
 
-    @article{Xu2022FedCross, 
-      title={Federated Cross Learning for Medical Image Segmentation}, 
-      author={Xu, Xuanang and Chen, Tianyi and Deng, Hannah H. and Kuang, Tianshu and Barber, Joshua C. and Kim, Daeseung and Gateno, Jaime and Yan, Pingkun and Xia, James J.}, 
-      journal={arXiv preprint arXiv:2204.02450}, 
-      year={2022}, 
+    @inproceedings{Xu2022FedCross, 
+      title={Federated Cross Learning for Medical Image Segmentation},
+      author={Xuanang Xu and Hannah H. Deng and Tianyi Chen and Tianshu Kuang and Joshua C. Barber and Daeseung Kim and Jaime Gateno and James J. Xia and Pingkun Yan},
+      booktitle={Medical Imaging with Deep Learning},
+      year={2023},
+      url={https://openreview.net/forum?id=DrZbwobH_zo}
     }
 
 ## Abstract
