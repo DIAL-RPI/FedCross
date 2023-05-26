@@ -6,7 +6,7 @@ This is a python (PyTorch) implementation of **Federated Cross Learning (FedCros
 ## Citation
   *X. Xu, H. H. Deng, T. Chen, T. Kuang, J. C. Barber, D. Kim, J. Gateno, J. J. Xia, and P. Yan, "Federated Cross Learning for Medical Image Segmentation," in Medical Imaging with Deep Learning 2023. Nashville, Tennessee, United States, Jul. 10-12, 2023.*
 
-    @inproceedings{Xu2022FedCross, 
+    @inproceedings{Xu2023FedCross, 
       title={Federated Cross Learning for Medical Image Segmentation},
       author={Xuanang Xu and Hannah H. Deng and Tianyi Chen and Tianshu Kuang and Joshua C. Barber and Daeseung Kim and Jaime Gateno and James J. Xia and Pingkun Yan},
       booktitle={Medical Imaging with Deep Learning},
