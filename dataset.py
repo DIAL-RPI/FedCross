@@ -29,40 +29,40 @@ def array_2_image(arr, spacing, origin, imtype):
     image = cast.GetOutput()
     return image
 
-def scan_path(d_name, d_path):
+def scan_path(dataset_name, dataset_path):
     entries = []
-    if d_name == 'MSD':
-        for f in os.listdir('{}/imagesTr'.format(d_path)):
+    if dataset_name == 'MSD':
+        for f in os.listdir('{}/imagesTr'.format(dataset_path)):
             if f.startswith('prostate_') and f.endswith('.nii.gz'):
                 case_name = f.split('.nii.gz')[0]
-                if os.path.isfile('{}/labelsTr/{}'.format(d_path, f)):
-                    image_name = '{}/imagesTr/{}'.format(d_path, f)
-                    label_name = '{}/labelsTr/{}'.format(d_path, f)
-                    entries.append([d_name, case_name, image_name, label_name])
-    elif d_name == 'NCI-ISBI':
-        for f in os.listdir('{}/image'.format(d_path)):
+                if os.path.isfile('{}/labelsTr/{}'.format(dataset_path, f)):
+                    image_name = '{}/imagesTr/{}'.format(dataset_path, f)
+                    label_name = '{}/labelsTr/{}'.format(dataset_path, f)
+                    entries.append([dataset_name, case_name, image_name, label_name])
+    elif dataset_name == 'NCI-ISBI':
+        for f in os.listdir('{}/image'.format(dataset_path)):
             if f.startswith('Prostate') and f.endswith('.nii.gz'):
                 case_name = f.split('.nii.gz')[0]
-                if os.path.isfile('{}/label/{}'.format(d_path, f)):
-                    image_name = '{}/image/{}'.format(d_path, f)
-                    label_name = '{}/label/{}'.format(d_path, f)
-                    entries.append([d_name, case_name, image_name, label_name])
-    elif d_name == 'PROMISE12':
-        for f in os.listdir('{}/image'.format(d_path)):
+                if os.path.isfile('{}/label/{}'.format(dataset_path, f)):
+                    image_name = '{}/image/{}'.format(dataset_path, f)
+                    label_name = '{}/label/{}'.format(dataset_path, f)
+                    entries.append([dataset_name, case_name, image_name, label_name])
+    elif dataset_name == 'PROMISE12':
+        for f in os.listdir('{}/image'.format(dataset_path)):
             if f.startswith('Case') and f.endswith('.nii.gz'):
                 case_name = f.split('.nii.gz')[0]
-                if os.path.isfile('{}/label/{}'.format(d_path, f)):
-                    image_name = '{}/image/{}'.format(d_path, f)
-                    label_name = '{}/label/{}'.format(d_path, f)
-                    entries.append([d_name, case_name, image_name, label_name])
-    elif d_name == 'PROSTATEx':
-        for f in os.listdir('{}/image'.format(d_path)):
+                if os.path.isfile('{}/label/{}'.format(dataset_path, f)):
+                    image_name = '{}/image/{}'.format(dataset_path, f)
+                    label_name = '{}/label/{}'.format(dataset_path, f)
+                    entries.append([dataset_name, case_name, image_name, label_name])
+    elif dataset_name == 'PROSTATEx':
+        for f in os.listdir('{}/image'.format(dataset_path)):
             if f.startswith('ProstateX-') and f.endswith('.nii.gz'):
                 case_name = f.split('.nii.gz')[0]
-                if os.path.isfile('{}/label/{}'.format(d_path, f)):
-                    image_name = '{}/image/{}'.format(d_path, f)
-                    label_name = '{}/label/{}'.format(d_path, f)
-                    entries.append([d_name, case_name, image_name, label_name])
+                if os.path.isfile('{}/label/{}'.format(dataset_path, f)):
+                    image_name = '{}/image/{}'.format(dataset_path, f)
+                    label_name = '{}/label/{}'.format(dataset_path, f)
+                    entries.append([dataset_name, case_name, image_name, label_name])
     return entries
 
 def create_folds(dataset_name, dataset_path, fold_name, fraction, exclude_case):

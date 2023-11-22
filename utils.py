@@ -3,6 +3,12 @@ import numpy as np
 # Use itk here will cause deadlock after the first training epoch 
 # when using multithread (dataloader num_workers > 0) but reason unknown
 import SimpleITK as sitk
+    
+def read_image(fname):
+    reader = sitk.ImageFileReader()
+    reader.SetFileName(fname)
+    image = reader.Execute()
+    return image
 
 def resample_array(array, size, spacing, origin, size_rs, spacing_rs, origin_rs, transform=None, linear=False):
     array = np.reshape(array, [size[2], size[1], size[0]])
