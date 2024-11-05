@@ -30,4 +30,4 @@ The model aggregation process in FL may lead to sub-optimal solution when dealin
 
 ## Contact
 You are welcome to contact us:  
-  - [xux12@rpi.edu](mailto:xux12@rpi.edu)(Dr. Xuanang Xu)
+  - [xux12@rpi.edu](mailto:xux12@rpi.edu) ([Dr. Xuanang Xu](https://superxuang.github.io/))
